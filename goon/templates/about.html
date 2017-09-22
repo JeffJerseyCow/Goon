@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>
+		Goon - About
+	</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}">
+	<link href="{{ url_for('static', filename='bootstrap.min.css' ) }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='ie10-viewport-bug-workaround.css' ) }}" rel="stylesheet">
+	<link href="{{ url_for('static', filename='jumbotron-narrow.css' ) }}" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      	<div class="header clearfix">
+          <nav>
+            <ul class="nav nav-pills pull-right">
+              <li role="presentation"><a href="{{ url_for('index') }}">Home</a></li>
+              <li role="presentation" class="active"><a href="{{ url_for('about') }}">About</a></li>
+              <li role="presentation"><a href="{{ url_for('list') }}">Keywords</a></li>
+            </ul>
+          </nav>
+        	<h3 class="text-muted">Welcome</h3>
+      	</div>
+
+      	<div class="jumbotron">
+
+	        <h1>About Goon</h1>
+        	<p class="text-justify" style="font-size: 16px;">
+        		Goon is a Keyword association engine that utilises the power of your web broswer to quickly navigate around localised networks. Simply create a new search engine entry using the following settings:
+        	</p>
+    			<dl class="row" style="font-size: 16px;">
+    				<dt class="col-sm-3 text-justify">Search Engine</dt>
+    				<dd class="col-sm-9 text-justify">Goon</dd>  			
+
+    				<dt class="col-sm-3 text-justify">Keyword</dt>
+    				<dd class="col-sm-9 text-justify">go</dd>  			
+
+    				<dt class="col-sm-3 text-justify">Goon String</dt>
+    				<dd class="col-sm-9 text-justify">http://goon/query?kw=%s</dd>
+    			</dl>
+    			<p class="text-justify" style="font-size: 16px;">
+            		Then type <strong>go keyword</strong> into your search bar. If you'd like to create a new link association visit the homepage and enter your desired Keyword/URL combination.
+          </p>
+        </div>
+
+      <footer class="footer">
+        <p>&copy; 2017 JeffJerseyCow</p>
+      </footer>
+
+    </div>
+
+  </body>
+</html>
