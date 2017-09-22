@@ -1,3 +1,4 @@
 # Postgres Config
-SQLALCHEMY_DATABASE_URI = "postgresql://goon:AzsxdcfV9@web/goondb"
-SQLALCHEMY_TRACK_MODIFICATIONS = False
+# dbtype://username:password@databaseserver/databasename
+SQLALCHEMY_DATABASE_URI 		= "postgresql://goon:password@web/goondb"
+SQLALCHEMY_TRACK_MODIFICATIONS 	= False
