@@ -112,7 +112,7 @@ def add_link():
 
 	 			# Fix Case
 				keyword = keyword.decode("utf-8").lower()
-				url = url.decode("utf-8").lower()
+				url = url.decode("utf-8")
 
 				# Valid 
 				new_link = KeyLink(keyword, url)
@@ -147,7 +147,7 @@ def add_link():
 						else:
 							# Fix Case
 							keyword = keyword.decode("utf-8").lower()
-							url = url.decode("utf-8").lower()
+							url = url.decode("utf-8")
 
 							# Valid 
 							new_link = KeyLink(keyword, url)
